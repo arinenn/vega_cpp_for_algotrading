@@ -13,7 +13,7 @@ jobs:
           path: |
             build/main
             build/tests
-
+            build/bench
 
   tests:
     needs: build
@@ -31,3 +31,13 @@ jobs:
     - uses: actions/download-artifact@v4
       with:
         name: binaries
+    - run: chmod +x main && ./main 123 321
+
+  bench:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: binaries
+      - run: chmod +x bench && ./bench

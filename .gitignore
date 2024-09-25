@@ -1,5 +1,5 @@
 .vscode
-*.swp
 build
-*.exe
 googletest
+docs
+benchmark
