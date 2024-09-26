@@ -2,6 +2,9 @@
 
 #include "../src/my_add.hpp"
 
+/*
+    A unit-test with several launches.
+*/
 TEST(Add, Simple) {
     EXPECT_EQ(my_add(2, 2), 4);
     EXPECT_EQ(my_add(3, 2), my_add(2, 3));

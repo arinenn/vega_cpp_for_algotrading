@@ -3,6 +3,7 @@
 
 #include "src/my_add.hpp"
 
+/*! A simple programm which prints out the sum of 2 input numbers. */
 int main(int argc, char *argv[])
 {
     if (argc != 3) {

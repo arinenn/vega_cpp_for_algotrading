@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
 project(sample_cpp_project)
 
-add_executable(main main.cpp src/my_add.cpp)
+add_executable(main src/main.cpp src/my_add.cpp)
 
 include(FetchContent)
 FetchContent_Declare(
