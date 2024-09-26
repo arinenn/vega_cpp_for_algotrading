@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y cmake doxygen
+      - run: sudo apt-get update && sudo apt-get install -y cmake
       - run: mkdir build && cmake -B build -S . && cmake --build build
       - uses: actions/upload-artifact@v4
         with:
@@ -46,9 +46,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: binaries
+      - run: sudo apt-get install -y doxygen
       - run: doxygen docs/doxyfile
       - uses: peaceiris/actions-gh-pages@v3
         with:
