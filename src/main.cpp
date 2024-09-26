@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 
-#include "src/my_add.hpp"
+#include "my_add.hpp"
 
 /*! A simple programm which prints out the sum of 2 input numbers. */
 int main(int argc, char *argv[])
