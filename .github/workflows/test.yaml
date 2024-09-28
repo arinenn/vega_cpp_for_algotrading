@@ -50,7 +50,7 @@ jobs:
       - run: sudo apt-get install -y doxygen
       - run: ls
       - run: cd docs
-      - run: doxygen doxyfile
+      - run: doxygen
       - run: cd .. && ls
       - run: |
           git config --global user.name "arinenn"
