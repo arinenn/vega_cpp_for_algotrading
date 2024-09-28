@@ -51,7 +51,7 @@ jobs:
       - run: cd docs & doxygen doxyfile & cd ..
       - run: |
           git config --global user.name "arinenn"
-          gif config --global user.email "arinenn@ya.ru"
+          git config --global user.email "arinenn@ya.ru"
           git add ./docs/html/index.html
           git commit -m "added documentation"
           git push
