@@ -1,6 +1,4 @@
 .vscode
 build
 googletest
-html
-latex
 benchmark
