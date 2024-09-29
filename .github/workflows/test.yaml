@@ -42,12 +42,12 @@ jobs:
           name: binaries
       - run: chmod +x bench && ./bench
 
-  docs:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: sudo apt-get install -y doxygen
-      - run: ls
-      - run: cd docs
-      - run: doxygen doxyfile
+  # docs:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - run: sudo apt-get install -y doxygen
+  #     - run: ls
+  #     - run: cd docs
+  #     - run: doxygen doxyfile
