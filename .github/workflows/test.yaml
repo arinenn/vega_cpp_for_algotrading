@@ -50,11 +50,4 @@ jobs:
       - run: sudo apt-get install -y doxygen
       - run: ls
       - run: cd docs
-      - run: doxygen
-      - run: cd .. && ls
-      - run: |
-          git config --global user.name "arinenn"
-          git config --global user.email "arinenn@ya.ru"
-          git add docs/html/index.html
-          git commit -m "added documentation"
-          git push
+      - run: doxygen doxyfile
